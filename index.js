@@ -29,7 +29,8 @@ form.onsubmit = function(e) {
     listButton.addEventListener('click', function(e) {
         listButton.style.textDecoration = 'line-through'
         clickCount ++
-
+        
+        // removes todo after 2 clicks
         if(clickCount === 2){
             liElement.remove()
         }
